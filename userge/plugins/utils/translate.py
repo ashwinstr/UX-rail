@@ -42,7 +42,7 @@ async def translateme(message: Message):
         text = message.reply_to_message.text or message.reply_to_message.caption
     if not text:
         await message.err(
-            "Give a text or reply to a message to translate!\nuse `.help tr`"
+            text="Give a text or reply to a message to translate!\nuse `.help tr`"
         )
         return
     if len(flags) == 2:
