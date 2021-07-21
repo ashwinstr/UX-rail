@@ -50,7 +50,7 @@ async def true_c_(message: Message):
             await userge.send_read_acknowledge(conv.chat_id)
         except BaseException as e:
             await message.edit(
-                "Please unblock <code>@RespawnRobot</code> and try again...", del_in=5
+                "Please unblock @RespawnRobot and try again...", del_in=5
             )
             await CHANNEL.log(e)
             return
